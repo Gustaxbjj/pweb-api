@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default (sequelize, DataTypes) => {
-  return sequelize.define('Canal', {
+const Canal = sequelize.define('Canal', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -23,4 +23,5 @@ export default (sequelize, DataTypes) => {
     tableName: 'canais',
     timestamps: false,
   });
+  return Canal;
 };
