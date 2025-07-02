@@ -14,7 +14,7 @@ import sequelize from "./config/database.js";
 (async() => {
    try {
         await sequelize.authenticate();
-console.log('deu bom porra')
+console.log('✅ deu bom porra')
     }catch(error){
         console.log('erro na conexão do banco, seu limitado!!', error)
     } finally{
