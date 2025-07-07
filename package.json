@@ -2,9 +2,10 @@
   "name": "pweb-api",
   "version": "1.0.0",
   "description": "��#\u0000 \u0000p\u0000w\u0000e\u0000b\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "main": "Index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+       "start": "npx nodemon server.js",
+    "test": "cross-env NODE_ENV=test mocha tests/**/*.test.js --exit"
   },
   "repository": {
     "type": "git",
