@@ -3,9 +3,9 @@ import bodyParser from 'body-parser';
 import { sequelize } from './models/Index.js';
 
 import usuarioRoutes   from './routes/UsuariosRouters.js';
-import filmeRoutes     from './routes/FilmeRouters.js';
+import filmeRoutes     from './routes/FilmesRouters.js';
 import canalRoutes     from './routes/CanaisRouters.js';
-import playlistRoutes from './routes/PlaylistsRouters.js';
+import playlistRoutes from './routes/PlaylistRouters.js';
 import comentarioRoutes from './routes/ComentarioRouters.js';
 
 const app = express();
@@ -25,7 +25,7 @@ app.use('/comentarios', comentarioRoutes);
 
 sequelize.sync({ alter: true })
   .then(() => {
-    console.log('Deu bom porra ✅');
+    console.log('✅ Database ok');
     app.listen(port, () => {
       console.log(`🚀 Server running on http://localhost:${port}`);
     });
