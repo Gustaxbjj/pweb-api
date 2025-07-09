@@ -19,6 +19,10 @@ export default (sequelize) => {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
         },
+        nome: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     }, {
         tableName: 'canal_filmes',
         timestamps: false,
